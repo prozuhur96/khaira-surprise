@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1 Month, Khaira!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f3e5f5, #fce4ec, #e8eaf6);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Ambient floating hearts */
+        .heart {
+            position: absolute;
+            color: rgba(236, 64, 122, 0.25);
+            font-size: 20px;
+            animation: float 6s infinite ease-in-out;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .h1 { top: 10%; left: 10%; animation-delay: 0s; }
+        .h2 { top: 20%; right: 12%; animation-delay: 1.5s; font-size: 26px; }
+        .h3 { bottom: 15%; left: 8%; animation-delay: 3s; font-size: 18px; }
+        .h4 { bottom: 10%; right: 10%; animation-delay: 4.5s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(10deg); }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 32px 24px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 15px 35px rgba(216, 27, 96, 0.12), 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 2px solid rgba(248, 187, 208, 0.8);
+            position: relative;
+            z-index: 10;
+            transition: transform 0.3s ease;
+        }
+
+        .badge {
+            background: linear-gradient(135deg, #f3e5f5, #f8bbd0);
+            color: #8e24aa;
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(142, 36, 170, 0.15);
+        }
+
+        h1 {
+            color: #d81b60;
+            font-size: 26px;
+            margin-bottom: 6px;
+            font-weight: 800;
+        }
+
+        .subhead {
+            color: #5c6bc0;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .message-box {
+            background: #ffffff;
+            border-left: 4px solid #ec407a;
+            padding: 16px 18px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border-top: 1px solid #f8f9fa;
+            border-right: 1px solid #f8f9fa;
+            border-bottom: 1px solid #f8f9fa;
+        }
+
+        .message-box h3 {
+            font-size: 14px;
+            color: #c2185b;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .message-box p {
+            font-size: 13.5px;
+            color: #424242;
+            line-height: 1.5;
+        }
+
+        .footer-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #f8bbd0, transparent);
+            margin: 20px 0 15px 0;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #757575;
+            margin-top: 6px;
+            line-height: 1.4;
+        }
+
+        .footer-text.highlight {
+            color: #d81b60;
+            font-weight: 600;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Background Elements -->
+    <div class="heart h1">💖</div>
+    <div class="heart h2">✨</div>
+    <div class="heart h3">🌸</div>
+    <div class="heart h4">💕</div>
+
+    <div class="card">
+        <div class="badge">✨ 1 MONTH MILESTONE ✨</div>
+        <h1>Happy 1 Month, Khaira! 👶</h1>
+        <div class="subhead">To Suweyda & Abdalla</div>
+
+        <div class="message-box">
+            <h3>To Hooyo, Suweyda ❤️</h3>
+            <p>Congratulations on your first month of motherhood!</p>
+        </div>
+
+        <div class="message-box">
+            <h3>To Aabo, Abdalla 💙</h3>
+            <p>Happy 1 month of fatherhood!</p>
+        </div>
+
+        <div class="message-box">
+            <h3>To Baby Khaira 🌟</h3>
+            <p>You have brought so much light and joy into the world over the last 30 days. You are so deeply loved!</p>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-text">
+            Made with love for the growing family.
+        </div>
+
+        <div class="footer-text highlight">
+            From your favourite Eedo! Love you lotsss❤️
+        </div>
+    </div>
+
+</body>
+</html>
